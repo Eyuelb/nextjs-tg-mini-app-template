@@ -10,14 +10,18 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@mantine/core": "^7.17.0",
+    "@mantine/hooks": "^7.17.0",
+    "@mantine/notifications": "^7.17.0",
     "@telegram-apps/sdk-react": "^2.0.22",
     "@telegram-apps/telegram-ui": "^2.1.5",
     "eruda": "^3.0.1",
+    "next": "^15.0.1",
     "next-intl": "^3.17.6",
     "normalize.css": "^8.0.1",
-    "next": "^15.0.1",
     "react": "^18.3.1",
-    "react-dom": "^18.3.1"
+    "react-dom": "^18.3.1",
+    "tailwind-preset-mantine": "^1.2.1"
   },
   "devDependencies": {
     "@types/node": "^20",
