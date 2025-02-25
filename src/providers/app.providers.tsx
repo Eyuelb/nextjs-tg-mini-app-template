@@ -4,9 +4,12 @@ import { I18nProvider } from "@/core/i18n/provider";
 import { Root } from "@/components/Root/Root";
 
 async function GlobalProviders({ children }: PropsWithChildren) {
+
   return (
     <I18nProvider>
-      <Root>{children}</Root>
+      <RootStyleRegistry>
+        <Root>{children}</Root>
+      </RootStyleRegistry>
     </I18nProvider>
   );
 }

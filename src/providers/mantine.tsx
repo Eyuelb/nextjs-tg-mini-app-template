@@ -9,7 +9,6 @@ export default function RootStyleRegistry({
 }) {
   return (
     <MantineProvider theme={theme}>
-      <ColorSchemeScript />
         <Notifications />
         {children}
     </MantineProvider>
