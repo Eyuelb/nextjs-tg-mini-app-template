@@ -10,6 +10,7 @@ const nextConfig = {
   },
   transpilePackages: ["next/dist/compiled/@next/react-dev-overlay"],
   compiler: {
+    removeConsole: false,
   },
 };
 

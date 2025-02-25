@@ -3,11 +3,10 @@ import RootStyleRegistry from "./mantine";
 import { I18nProvider } from "@/core/i18n/provider";
 import { Root } from "@/components/Root/Root";
 
-async function GlobalProviders({ children }: PropsWithChildren) {
+function GlobalProviders({ children }: PropsWithChildren) {
   return (
-    <I18nProvider>
-      <RootStyleRegistry>{children} </RootStyleRegistry>
-    </I18nProvider>
+    <RootStyleRegistry>{children} </RootStyleRegistry>
+
   );
 }
 
