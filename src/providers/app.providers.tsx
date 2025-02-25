@@ -6,7 +6,7 @@ import { Root } from "@/components/Root/Root";
 async function GlobalProviders({ children }: PropsWithChildren) {
   return (
     <I18nProvider>
-      <RootStyleRegistry>Hello </RootStyleRegistry>
+      <RootStyleRegistry>{children} </RootStyleRegistry>
     </I18nProvider>
   );
 }
