@@ -1,5 +1,6 @@
+"use client"
 import { theme } from "@/styles/theme";
-import { ColorSchemeScript, MantineProvider } from "@mantine/core";
+import {  MantineProvider } from "@mantine/core";
 import { Notifications } from "@mantine/notifications";
 
 export default function RootStyleRegistry({
