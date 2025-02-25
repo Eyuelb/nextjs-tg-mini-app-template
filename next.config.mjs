@@ -6,6 +6,7 @@ const nextConfig = {
   output: "standalone",
   experimental: {
     optimizePackageImports: ["@mantine/core", "@mantine/hooks"],
+    browsersListForSwc: true, // Ensures compatibility with older browsers
   },
   compiler: {
     removeConsole: true,

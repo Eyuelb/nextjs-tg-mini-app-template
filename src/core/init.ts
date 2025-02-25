@@ -11,10 +11,9 @@ import {
 /**
  * Initializes the application and configures its dependencies.
  */
-const debugMode = true
 export function init(debug: boolean): void {
   // Set @telegram-apps/sdk-react debug mode.
-  $debug.set(debugMode);
+  $debug.set(debug);
 
   // Initialize special event handlers for Telegram Desktop, Android, iOS, etc.
   // Also, configure the package.
@@ -36,7 +35,7 @@ export function init(debug: boolean): void {
   themeParams.bindCssVars();
 
   // Add Eruda if needed.
-  debugMode && import('eruda')
+  debug && import('eruda')
     .then((lib) => lib.default.init())
     .catch(console.error);
 }
