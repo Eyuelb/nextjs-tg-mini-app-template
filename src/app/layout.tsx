@@ -28,10 +28,7 @@ export default async function RootLayout({ children }: PropsWithChildren) {
       <body className="antialiased">
         <GlobalProviders>{children} </GlobalProviders>
       </body>
-      <Script
-        src="https://polyfill.io/v3/polyfill.min.js?features=IntersectionObserver"
-        strategy="beforeInteractive"
-      />
+
     </html>
   );
 }
