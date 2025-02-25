@@ -6,7 +6,7 @@ import { Root } from "@/components/Root/Root";
 import { I18nProvider } from "@/core/i18n/provider";
 
 import "@telegram-apps/telegram-ui/dist/styles.css";
-import "@/styles/globals.css";
+//import "@/styles/globals.css";
 import Head from "next/head";
 import { ColorSchemeScript } from "@mantine/core";
 import { GlobalProviders } from "@/providers/app.providers";
