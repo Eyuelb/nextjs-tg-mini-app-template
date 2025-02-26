@@ -23,7 +23,7 @@ export default async function RootLayout({ children }: PropsWithChildren) {
   return (
     <html lang={locale} {...mantineHtmlProps}>
       <Head>
-        <ColorSchemeScript />
+        <ColorSchemeScript defaultValue="dark" />
       </Head>
       <body className="antialiased">
         <GlobalProviders>{children} </GlobalProviders>
