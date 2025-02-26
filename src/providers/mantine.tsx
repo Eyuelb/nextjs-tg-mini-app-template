@@ -9,7 +9,7 @@ export default function RootStyleRegistry({
   children: React.ReactNode;
 }) {
   return (
-    <MantineProvider theme={theme}>
+    <MantineProvider>
         <Notifications />
         {children}
     </MantineProvider>
