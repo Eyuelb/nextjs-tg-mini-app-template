@@ -8,7 +8,7 @@ import { I18nProvider } from "@/core/i18n/provider";
 import "@telegram-apps/telegram-ui/dist/styles.css";
 //import "@/styles/globals.css";
 import Head from "next/head";
-import { ColorSchemeScript } from "@mantine/core";
+import { ColorSchemeScript, mantineHtmlProps } from "@mantine/core";
 import { GlobalProviders } from "@/providers/app.providers";
 import Script from "next/script";
 
@@ -21,7 +21,7 @@ export default async function RootLayout({ children }: PropsWithChildren) {
   const locale = await getLocale();
 
   return (
-    <html lang={locale} suppressHydrationWarning>
+    <html lang={locale} {...mantineHtmlProps}>
       <Head>
         <ColorSchemeScript />
       </Head>
